@@ -305,9 +305,9 @@ nav {
 }
 
 .craft__container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
+  /* display: grid;
+  grid-template-columns: repeat(2, 1fr); */
+  gap: 1rem;
   align-items: center;
 }
 
@@ -318,6 +318,7 @@ nav {
 .craft__image {
   position: relative;
   isolation: isolate;
+  /* margin-right: 1.5rem; */
 }
 
 .craft__image::before {
@@ -558,7 +559,7 @@ nav {
   align-items: center;
   gap: 1rem;
   background-color: var(--white);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .footer__form input {
@@ -570,13 +571,15 @@ nav {
 }
 
 .footer__form button {
-  padding: 1rem 1.5rem;
+  padding: 1rem 0.5rem;
+  width: 50%;
   outline: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: var(--white);
   background-color: var(--primary-color);
-  border-radius: 5px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 .footer__bar {

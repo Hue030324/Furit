@@ -40,9 +40,31 @@ ScrollReveal().reveal(".header__container a", {
   delay: 1500,
 });
 
-const swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".swiper", {
   loop: true,
   pagination: {
     el: ".swiper-pagination",
+  },
+});
+
+var swiper = new Swiper(".craft__image_container", {
+  spaceBetween: 20,
+    loop: true,
+    centeredSlides: true,
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+    },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    450: {
+      slidesPerView: 2,
+    },
+    768: {
+      slidesPerView: 3,
+    },
+    
   },
 });
