@@ -71,7 +71,7 @@ header {
       rgba(0, 0, 0, 0.8),
       rgba(0, 0, 0, 0.2)
     ),
-    url("assets/image.png");
+    url("assets/home.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,6 +95,12 @@ nav {
   font-weight: 600;
   font-family: var(--header-font);
   color: var(--white);
+  display: flex;
+}
+
+.nav__logo a img{
+  width: 40px;
+  filter: invert(100%); 
 }
 
 .nav__links {
@@ -547,6 +553,37 @@ nav {
 
 .footer__content p {
   color: var(--white);
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 10px;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  4px;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.socialIcons a i{
+    font-size: 25px;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
 }
 
 .footer__form form {
